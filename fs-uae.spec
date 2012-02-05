@@ -52,7 +52,7 @@ such as Linux, Mac OS X and BeOS.]
 
 
 %build
-make
+make LIBS="-lpthread -lm -ldl"
 
 %install
 rm -rf $RPM_BUILD_ROOT
