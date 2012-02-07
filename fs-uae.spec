@@ -45,6 +45,7 @@ make
 
 %makeinstall
 %ifarch x86_64
+mkdir -p %{buildroot}/%{_libdir}/fs-uae
 cp -Rf %{buildroot}/usr/lib/fs-uae/libcapsimage.so %{buildroot}/%{_libdir}/fs-uae/libcapsimage.so
 rm -f  %{buildroot}/usr/lib/fs-uae/libcapsimage.so
 %endif
