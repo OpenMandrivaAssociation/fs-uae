@@ -1,12 +1,3 @@
-%define cdrname		cdrtools
-%define cdrmainvers	2.01
-%define cdrvers 	%{cdrmainvers}a38
-%define wiprel		WIP4
-
-# For building with SCSI support
-%define build_scsi 1
-%{?_with_scsi: %global build_scsi 1}
-%{?_without_scsi: %global build_scsi 0}
 
 Summary: A software emulation of the Amiga system
 Name: fs-uae
@@ -61,8 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 %{_bindir}/*
-
-
-
-
+%{_libdir}/%{name}/libcapsimage.so
+%{_docdir}/%{name}/*
+%{_datadir}/%{name}/*
 
