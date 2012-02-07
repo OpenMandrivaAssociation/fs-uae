@@ -47,7 +47,7 @@ such as Linux, Mac OS X and BeOS.]
 
 %prep
 %setup -q 
-%patch0 -p0
+
 
 %build
 make 
