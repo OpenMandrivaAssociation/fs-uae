@@ -25,7 +25,7 @@ License: GPL
 Group: Emulators
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 BuildRequires: X11-devel
-BuildRequires: SDL-devel
+BuildRequires: SDL-devel glib-devel
 BuildRequires: attr-devel
 Conflicts: uae
 Obsoletes: uaedev
