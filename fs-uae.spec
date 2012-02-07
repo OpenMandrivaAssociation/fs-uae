@@ -15,12 +15,13 @@ Release: %mkrel 1
 URL: http://sourceforge.net/projects/uaedev/
 Source0: %{name}-%{version}.tar.bz2
 Source1: ftp://ftp.berlios.de/pub/cdrecord/alpha/%{cdrname}-%{cdrvers}.tar.bz2
+Patch0:	fs-uae-Makefile.patch
 License: GPL
 Group: Emulators
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 BuildRequires: X11-devel
 BuildRequires: SDL-devel glib-devel
-BuildRequires: attr-devel
+BuildRequires: attr-devel glib2.0-devel
 BuildRequires: gtk+-devel
 BuildRequires: gtk+2-devel
 
@@ -46,17 +47,15 @@ such as Linux, Mac OS X and BeOS.]
 
 %prep
 %setup -q 
-
+%patch0 -p0
 
 %build
-make LIBS="-lpthread -lm -ldl"
+make 
 
 %install
-rm -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT%{_prefix}/bin \
-	$RPM_BUILD_ROOT%{_libdir}/uae/amiga/source
+
 %makeinstall
-cp -pR amiga/* $RPM_BUILD_ROOT/%{_libdir}/uae/amiga/.
+
 
 %clean
 rm -rf $RPM_BUILD_ROOT
