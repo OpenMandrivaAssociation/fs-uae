@@ -14,8 +14,6 @@ Version: 0.9.4
 Release: %mkrel 1
 URL: http://sourceforge.net/projects/uaedev/
 Source0: %{name}-%{version}.tar.bz2
-Source1: ftp://ftp.berlios.de/pub/cdrecord/alpha/%{cdrname}-%{cdrvers}.tar.bz2
-Patch0:	fs-uae-Makefile.patch
 License: GPL
 Group: Emulators
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
@@ -62,10 +60,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
-%doc docs/*
 %{_bindir}/*
-%{_libdir}/uae
-%doc docs/*
+
 
 
 
