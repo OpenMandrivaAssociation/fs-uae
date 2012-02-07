@@ -15,18 +15,15 @@ Release: %mkrel 1
 URL: http://sourceforge.net/projects/uaedev/
 Source0: %{name}-%{version}.tar.bz2
 Source1: ftp://ftp.berlios.de/pub/cdrecord/alpha/%{cdrname}-%{cdrvers}.tar.bz2
-Patch2: uae-scsi.patch
-Patch4: uae-0.8.25-20040302-libscg.patch
-Patch5: uae-0.8.22-openscsi.patch
-Patch6: e-uae-0.8.27-fucomi.patch
-Patch7:	e-uae-0.8.29-WIP4-sdlkeys-wahcade.patch
-Patch8:	e-uae-fix-string-format-bug.patch
 License: GPL
 Group: Emulators
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 BuildRequires: X11-devel
 BuildRequires: SDL-devel glib-devel
 BuildRequires: attr-devel
+BuildRequires: gtk+-devel
+BuildRequires: gtk+2-devel
+
 Conflicts: uae
 Obsoletes: uaedev
 Provides: uaedev
