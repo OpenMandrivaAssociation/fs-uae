@@ -52,7 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 %{_bindir}/*
-%{_libdir}/%{name}/*
+%{_libdir}/*
 %{_docdir}/%{name}/*
 %{_datadir}/%{name}/*
 
