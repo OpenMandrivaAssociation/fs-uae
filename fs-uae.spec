@@ -19,7 +19,7 @@ Patch0:	fs-uae-Makefile.patch
 License: GPL
 Group: Emulators
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
-BuildRequires: X11-devel
+BuildRequires: X11-devel openal-devel
 BuildRequires: SDL-devel glib-devel
 BuildRequires: attr-devel 
 BuildRequires: gtk+-devel
