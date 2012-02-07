@@ -21,7 +21,7 @@ Group: Emulators
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 BuildRequires: X11-devel
 BuildRequires: SDL-devel glib-devel
-BuildRequires: attr-devel glib2.0-devel
+BuildRequires: attr-devel 
 BuildRequires: gtk+-devel
 BuildRequires: gtk+2-devel
 
