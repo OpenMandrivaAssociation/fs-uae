@@ -14,10 +14,6 @@ BuildRequires: attr-devel
 BuildRequires: gtk+-devel
 BuildRequires: gtk+2-devel
 
-Conflicts: uae
-Obsoletes: uaedev
-Provides: uaedev
-
 %description
 UAE is a software emulation of the Amiga system hardware, which
 enables you to run most available Amiga software.  Since it is a
