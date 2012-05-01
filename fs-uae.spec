@@ -56,4 +56,11 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/*
 %{_docdir}/%{name}/*
 %{_datadir}/%{name}/*
+%{_datadir}/applications/fs-uae.desktop
+%{_datadir}/icons/hicolor/128x128/apps/fs-uae.png
+%{_datadir}/icons/hicolor/16x16/apps/fs-uae.png
+%{_datadir}/icons/hicolor/256x256/apps/fs-uae.png
+%{_datadir}/icons/hicolor/32x32/apps/fs-uae.png
+%{_datadir}/icons/hicolor/48x48/apps/fs-uae.png
+%{_datadir}/icons/hicolor/64x64/apps/fs-uae.png
 
