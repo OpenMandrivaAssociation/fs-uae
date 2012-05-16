@@ -63,4 +63,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/icons/hicolor/32x32/apps/fs-uae.png
 %{_datadir}/icons/hicolor/48x48/apps/fs-uae.png
 %{_datadir}/icons/hicolor/64x64/apps/fs-uae.png
+%{_datadir}/locale/de/LC_MESSAGES/fs-uae.mo
+%{_datadir}/locale/fr/LC_MESSAGES/fs-uae.mo
+%{_datadir}/LC_MESSAGES/fs-uae.mo
+%{_datadir}/locale/pl/LC_MESSAGES/fs-uae.mo
+%{_datadir}/locale/sr/LC_MESSAGES/fs-uae.mo
 
