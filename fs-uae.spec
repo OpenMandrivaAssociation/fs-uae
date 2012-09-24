@@ -2,7 +2,7 @@
 Summary: A software emulation of the Amiga system
 Name: fs-uae
 Version: 1.3.27
-Release: %mkrel 1
+Release: %mkrel 2 
 URL: http://fengestad.no/fs-uae/files/
 Source0: %{name}-%{version}.tar.bz2
 License: GPL
