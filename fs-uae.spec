@@ -53,7 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 %{_bindir}/fs-uae
-%{_libdir}/fs-uae/libcapsimage.so
+# %{_libdir}/fs-uae/libcapsimage.so
 %{_docdir}/%{name}/*
 %{_datadir}/%{name}/*
 %{_datadir}/applications/fs-uae.desktop
