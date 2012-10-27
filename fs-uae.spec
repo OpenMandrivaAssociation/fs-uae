@@ -1,10 +1,11 @@
 
 Summary: A software emulation of the Amiga system
 Name: fs-uae
-Version: 1.3.28
+Version: 2.0.1
 Release: %mkrel 1 
 URL: http://fengestad.no/fs-uae/files/
 Source0: %{name}-%{version}.tar.bz2
+Source1:  %{name}-game-server-%{version}.py
 License: GPL
 Group: Emulators
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
@@ -40,12 +41,8 @@ make
 %install
 
 %makeinstall
-%ifarch x86_64
-mkdir -p %{buildroot}/%{_libdir}/fs-uae
-# cp -Rf %{buildroot}/usr/lib/fs-uae/libcapsimage.so %{buildroot}/%{_libdir}/fs-uae/libcapsimage.so
-# rm -f  %{buildroot}/usr/lib/fs-uae/libcapsimage.so
-%endif
 
+install -d %{SOURCE1} %{buildroot}/%{_datadir}/%{name}/%{name}-game-server-%{version}.py
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -53,7 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 %{_bindir}/fs-uae
-# %{_libdir}/fs-uae/libcapsimage.so
+
 %{_docdir}/%{name}/*
 %{_datadir}/%{name}/*
 %{_datadir}/applications/fs-uae.desktop
