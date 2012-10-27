@@ -42,7 +42,7 @@ make
 
 %makeinstall
 
-install -d %{SOURCE1} %{buildroot}/%{_datadir}/%{name}/%{name}-game-server-%{version}.py
+install -d %{SOURCE1} %{buildroot}/%{_datadir}/%{name}/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
