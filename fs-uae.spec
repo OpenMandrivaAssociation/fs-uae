@@ -42,7 +42,7 @@ make
 
 %makeinstall
 
-install -d %{SOURCE1} %{buildroot}/%{_datadir}/%{name}/
+cp %{SOURCE1} %{buildroot}/%{_datadir}/%{name}/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
