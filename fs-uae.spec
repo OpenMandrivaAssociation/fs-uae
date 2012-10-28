@@ -65,4 +65,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/locale/it/LC_MESSAGES/fs-uae.mo
 %{_datadir}/locale/pl/LC_MESSAGES/fs-uae.mo
 %{_datadir}/locale/sr/LC_MESSAGES/fs-uae.mo
+%{_datadir}/locale/nb/LC_MESSAGES/fs-uae.mo
 
