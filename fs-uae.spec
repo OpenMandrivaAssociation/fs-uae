@@ -6,6 +6,7 @@ License:	GPLv2
 Group:		Emulators
 URL:		http://fengestad.no/fs-uae/files/
 Source0:	%{name}-%{version}.tar.gz
+BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	pkgconfig(gl)
 BuildRequires:	pkgconfig(glu)
 BuildRequires:	pkgconfig(glib-2.0)
