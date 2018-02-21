@@ -1,19 +1,22 @@
 Summary:	A software emulation of the Amiga system
 Name:		fs-uae
-Version:	2.2.2
-Release:	2
+Version:	2.8.3
+Release:	1
 License:	GPLv2
 Group:		Emulators
-URL:		http://fengestad.no/fs-uae/files/
-Source0:	%{name}-%{version}.tar.gz
+URL:		http://fs-uae.net
+Source0:	https://fs-uae.net/stable/%{version}/fs-uae-%{version}.tar.gz
 BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	pkgconfig(gl)
+BuildRequires:	pkgconfig(glew)
 BuildRequires:	pkgconfig(glu)
 BuildRequires:	pkgconfig(glib-2.0)
+BuildRequires:	pkgconfig(libmpeg2)
 BuildRequires:	pkgconfig(libpng)
 BuildRequires:	pkgconfig(openal)
-BuildRequires:	pkgconfig(sdl)
+BuildRequires:	pkgconfig(sdl2)
 BuildRequires:	pkgconfig(x11)
+BuildRequires:  pkgconfig(xi)
 BuildRequires:	pkgconfig(zlib)
 
 %description
@@ -34,6 +37,7 @@ such as Linux, Mac OS X and BeOS.]
 
 %prep
 %setup -q
+%configure
 
 %build
 %make
@@ -45,8 +49,10 @@ such as Linux, Mac OS X and BeOS.]
 
 %files -f %{name}.lang
 %{_bindir}/fs-uae
+%{_bindir}/fs-uae-device-helper
 %{_docdir}/%{name}
 %{_datadir}/%{name}
+%{_datadir}/mime/packages/fs-uae.xml
 %{_datadir}/applications/fs-uae.desktop
 %{_datadir}/icons/hicolor/*/apps/fs-uae.png
 

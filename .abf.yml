@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   fs-uae-2.2.2.tar.gz: d8b79ac244f026b90d55f8de9c846b5feb2c0ad8
+sources:
+  fs-uae-2.8.3.tar.gz: 65e348da76352694552a01cfeda0e8215642c7e7
