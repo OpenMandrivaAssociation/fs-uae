@@ -8,7 +8,6 @@ URL:		http://fs-uae.net
 Source0:	https://fs-uae.net/stable/%{version}/fs-uae-%{version}.tar.gz
 BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	pkgconfig(gl)
-BuildRequires:	pkgconfig(glew)
 BuildRequires:	pkgconfig(glu)
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(libmpeg2)
@@ -18,6 +17,7 @@ BuildRequires:	pkgconfig(sdl2)
 BuildRequires:	pkgconfig(x11)
 BuildRequires:  pkgconfig(xi)
 BuildRequires:	pkgconfig(zlib)
+BuildRequires:	zip
 
 %description
 UAE is a software emulation of the Amiga system hardware, which
@@ -37,6 +37,8 @@ such as Linux, Mac OS X and BeOS.]
 
 %prep
 %setup -q
+export CC=gcc
+export CXX=g++
 %configure
 
 %build
