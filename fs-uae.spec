@@ -1,11 +1,11 @@
 Summary:	A software emulation of the Amiga system
 Name:		fs-uae
-Version:	2.8.3
-Release:	2
+Version:	3.1.66
+Release:	1
 License:	GPLv2
 Group:		Emulators
-URL:		http://fs-uae.net
-Source0:	https://fs-uae.net/stable/%{version}/fs-uae-%{version}.tar.gz
+URL:		https://fs-uae.net
+Source0:	https://fs-uae.net/files/FS-UAE/Stable/%{version}/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	pkgconfig(gl)
 BuildRequires:	pkgconfig(glu)
