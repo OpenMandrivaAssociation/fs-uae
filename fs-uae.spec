@@ -6,6 +6,11 @@ License:	GPLv2
 Group:		Emulators
 URL:		https://fs-uae.net
 Source0:	https://fs-uae.net/files/FS-UAE/Stable/%{version}/%{name}-%{version}.tar.xz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	gettext
 BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	pkgconfig(gl)
